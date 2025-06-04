@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Objects;
+
 public class Author {
     private String name;
     private String biography;
@@ -29,5 +31,18 @@ public class Author {
     @Override
     public String toString() {
         return "Author: " + name + "\nBiography: " + biography;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, biography);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (!(obj instanceof Author)) return false;
+        Author other = (Author) obj;
+        return Objects.equals(name, other.name) && Objects.equals(biography, other.biography);
     }
 }
