@@ -10,7 +10,13 @@ public class Librarian {
         this.name = name;
         this.contactInfo = contactInfo;
     }
+// ...existing code...
 
+public void createLoan(Library library, Loan loan) {
+    library.addLoan(loan);
+}
+
+// ...existing code...
     // Getters and setters
     public String getStaffId() {
         return staffId;
