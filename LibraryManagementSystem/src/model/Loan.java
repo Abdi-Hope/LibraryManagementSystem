@@ -3,10 +3,10 @@ package model;
 import java.time.LocalDate;
 
 public class Loan {
-    private Book book;
-    private Member member;
-    private LocalDate loanDate;
-    private LocalDate dueDate;
+    private final Book book;
+    private final Member member;
+    private final LocalDate loanDate;
+    private final LocalDate dueDate;
     private boolean isReturned;
 
     public Loan(Book book, Member member, LocalDate loanDate, LocalDate dueDate) {
