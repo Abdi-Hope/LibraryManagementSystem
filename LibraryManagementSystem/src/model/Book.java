@@ -5,6 +5,7 @@ public class Book {
     private final String title;
     private final Author author;
     private boolean isAvailable;
+    private int publishedYear;
 
     public Book(String isbn, String title, Author author) {
         this.isbn = isbn;
@@ -12,6 +13,7 @@ public class Book {
         this.author = author;
         this.isAvailable = true;
     }
+
 
     // Getters and setters
     public String getIsbn() {
@@ -33,7 +35,15 @@ public class Book {
     public void setAvailable(boolean available) {
         isAvailable = available;
     }
+    
 
+    public int getPublishedYear() {
+        return publishedYear;
+    }
+
+    public void setPublishedYear(int publishedYear) {
+        this.publishedYear = publishedYear;
+    }
     @Override
     public String toString() {
         return "Book: " + title + "\nISBN: " + isbn + "\n" + author.toString() + 
