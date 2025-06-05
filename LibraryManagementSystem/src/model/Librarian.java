@@ -1,9 +1,9 @@
 package model;
 
 public class Librarian {
-    private String staffId;
-    private String name;
-    private String contactInfo;
+    private final String staffId;
+    private final String name;
+    private final String contactInfo;
 
     public Librarian(String staffId, String name, String contactInfo) {
         this.staffId = staffId;

@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Library {
-    private String name;
-    private String address;
-    private List<Book> books;
-    private List<Member> members;
-    private List<Librarian> librarians;
-    private List<Loan> loans;
+    private final String name;
+    private final String address;
+    private final List<Book> books;
+    private final List<Member> members;
+    private final List<Librarian> librarians;
+    private final List<Loan> loans;
 
     public Library(String name, String address) {
         this.name = name;
